@@ -1,4 +1,6 @@
-import tensorflow as tf
+import tensorflow as tf 
+from keras.models import Sequential
+from keras.layers import Dense, LSTM, Dropout
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -46,13 +48,9 @@ print(df_x)
 
 
 
-
-
-
-
 #matplotlib 라이브러리 이용해 그래프 그리기
-'''
-plt.figure(figsize=(14, 5)) #가로 세로 길이
+
+'''plt.figure(figsize=(14, 5)) #가로 세로 길이
 plt.plot(y)                 #그래프를 그릴 데이터
 plt.title('Stock Price')
 plt.xlabel('Date')
