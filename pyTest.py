@@ -33,17 +33,13 @@ df_y = df_x[['Close']]  #df_x에서 Close(종가)만 가져옴
 x = df_x.values.tolist() #df_x를 리스트 형식으로
 y = df_y.values.tolist()
 
-print(df_x)
+#tt = df_x.iloc[0:5,0:3]
 
+df_x.info()
 
 
 #데이터 셋 준비하기
 #ex) [[0~50일까지의 데이터], [1~51일 까지의 데이터] '''[]] 형태로 만들기
-
-
-
-
-
 
 
 
